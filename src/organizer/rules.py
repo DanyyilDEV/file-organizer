@@ -11,6 +11,10 @@ CATEGORIES = {
 
 
 def categorize(path: Path) -> str:
+    """
+
+    :rtype: str
+    """
     ext = path.suffix.lower()
     for category, extensions in CATEGORIES.items():
         if ext in extensions:
